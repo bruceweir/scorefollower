@@ -1351,12 +1351,13 @@ public class PerformanceMatcher {
 				pm2.setLiveInput();
 
 				
-//			} else if (args[i].equals("-l")) {
-//				pm1.audioOutputRequested = false;
-//				pm2.audioOutputRequested = true;
-//				pm1.setLiveInput();
-//				pm2.setInputFile("C:/Users/Bairong/Desktop/MACBOOKAIR_JW/Mozart_b.wav");
-//			} else if (args[i].equals("-L")) {
+			} else if (args[i].equals("-rl")) {
+				pm1.audioOutputRequested = true;
+				pm2.audioOutputRequested = false;
+				pm1.setLiveInput();
+				pm2.setInputFile("/home/brucew/scorefollower/Sospiri_Barbirolli_REF.wav");
+//			
+//			 } else if (args[i].equals("-L")) {
 //				pm2.audioOutputRequested = false;
 //				pm1.audioOutputRequested = true;
 //				pm2.setLiveInput();

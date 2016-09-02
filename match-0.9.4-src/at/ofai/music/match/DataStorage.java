@@ -9,7 +9,7 @@ public class DataStorage {
 	private HashMap <Integer, Integer> map =  new HashMap<Integer, Integer>();
 
 	public HashMap<Integer,Integer> getHashmap() throws FileNotFoundException {
-		Scanner sc = new Scanner(new FileReader("C:/Users/Bairong/Desktop/Sos.txt"));
+		Scanner sc = new Scanner(new FileReader("/home/brucew/scorefollower/Sos.txt"));
 		 while (sc.hasNextLine()) {
 
        int timing= sc.nextInt();

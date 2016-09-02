@@ -140,7 +140,7 @@ public class ScrollingMatrix extends Canvas implements KeyListener,
 		xSize = sz2;
 		ySize = sz1;
 		
-		clientEndPoint = new WebsocketClientEndpoint(new URI("ws://localhost:8080/WebApp/echo"));
+		clientEndPoint = new WebsocketClientEndpoint(new URI("ws://localhost:8090/WebApp/echo"));
 		//WebSocket
 		
 		finder = new Finder(pm1, pm2);

@@ -15,7 +15,7 @@ public class imageURL {
         
 
 	public HashMap<Integer,String> getURLmap() throws FileNotFoundException {
-		Scanner sc = new Scanner(new FileReader("C:/Users/Bairong/Desktop/Bar-URL.txt"));
+		Scanner sc = new Scanner(new FileReader("/home/brucew/scorefollower/Bar-URL.txt"));
 		 while (sc.hasNextLine()) {
 
        int bar = sc.nextInt();

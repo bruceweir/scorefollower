@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Bairong/Documents/NetBeansProjects/WebApp/src/java/at/ofai/music/server/DataHandler.java</file>
-            <file>file:/C:/Users/Bairong/Documents/NetBeansProjects/WebApp/src/java/at/ofai/music/server/EchoServer.java</file>
-            <file>file:/C:/Users/Bairong/Documents/NetBeansProjects/WebApp/web/index.html</file>
-            <file>file:/C:/Users/Bairong/Documents/NetBeansProjects/WebApp/src/java/at/ofai/music/server/imageURL.java</file>
-            <file>file:/C:/Users/Bairong/Documents/NetBeansProjects/WebApp/web/javascript.js</file>
+            <file>file:/home/brucew/scorefollower/WebApp/src/java/at/ofai/music/server/EchoServer.java</file>
+            <file>file:/home/brucew/scorefollower/WebApp/nbproject/build-impl.xml</file>
+            <file>file:/home/brucew/scorefollower/WebApp/web/javascript.js</file>
+            <file>file:/home/brucew/scorefollower/WebApp/src/java/at/ofai/music/server/DataHandler.java</file>
+            <file>file:/home/brucew/scorefollower/WebApp/src/java/at/ofai/music/server/imageURL.java</file>
         </group>
     </open-files>
 </project-private>

@@ -15,7 +15,7 @@ public class DataHandler {
         
 
 	public HashMap<Integer,String> getHashmap() throws FileNotFoundException {
-		Scanner sc = new Scanner(new FileReader("C:/Users/Bairong/Desktop/Bar-Per.txt"));
+		Scanner sc = new Scanner(new FileReader("/home/brucew/scorefollower/Bar-Per.txt"));
 		 while (sc.hasNextLine()) {
 
        int bar = sc.nextInt();
