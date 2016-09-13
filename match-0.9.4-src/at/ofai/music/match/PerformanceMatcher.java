@@ -1352,7 +1352,7 @@ public class PerformanceMatcher {
 
 				
 			} else if (args[i].equals("-rl")) {
-				pm1.audioOutputRequested = true;
+				pm1.audioOutputRequested = false;
 				pm2.audioOutputRequested = false;
 				pm1.setLiveInput();
 				pm2.setInputFile("/home/brucew/scorefollower/Sospiri_Barbirolli_REF.wav");
