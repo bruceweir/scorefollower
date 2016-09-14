@@ -69,8 +69,9 @@ public class EchoServer {
         HashMap <Integer, Integer> refMap  = z.getHashmap();
         
         
-        int refTime = Integer.parseInt(message);
-        //float refTime = Float.parseFloat(message);
+        float tmpx = Float.parseFloat(message);
+        float RefTime = tmpx/50;
+        int refTime = (int)RefTime;
         int bar = refMap.get(refTime);
         allSessions = session.getOpenSessions();
       
