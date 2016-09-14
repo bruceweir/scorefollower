@@ -77,7 +77,7 @@ public class EchoServer {
       
           for (Session sess: allSessions){
               JsonObject obj = Json.createObjectBuilder()
-              .add("refTime", refTime)
+              .add("refTime", String.format("%.2f", RefTime))
               .add("bar", bar)
               .add("messageType", "setMusicScorePosition")
               .add("position", map.get(bar))
