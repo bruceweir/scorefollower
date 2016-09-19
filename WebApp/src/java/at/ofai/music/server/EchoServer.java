@@ -60,7 +60,21 @@ public class EchoServer {
     @OnMessage
     public void onMessage(String message, Session session) throws EncodeException, IOException{
        
-        System.out.println("Message from " + session.getId() + ": " + message);
+       System.out.println("Message from " + session.getId() + ": " + message);
+        allSessions = session.getOpenSessions();
+        
+        boolean check = message.startsWith("setTiming");
+        if (check){
+            for (Session sess: allSessions){
+              JsonObject obj = Json.createObjectBuilder()
+              .add("messageType", "setTiming")
+              .add("time", System.currentTimeMillis())
+              .build();
+          sess.getBasicRemote().sendObject(obj);
+          }
+        }
+        
+        
         DataHandler x = new DataHandler();
         HashMap <Integer, String> map  = x.getHashmap();
         imageURL y = new imageURL();
@@ -73,7 +87,6 @@ public class EchoServer {
         float RefTime = tmpx/50;
         int refTime = (int)RefTime;
         int bar = refMap.get(refTime);
-        allSessions = session.getOpenSessions();
       
           for (Session sess: allSessions){
               JsonObject obj = Json.createObjectBuilder()
@@ -82,7 +95,7 @@ public class EchoServer {
               .add("messageType", "setMusicScorePosition")
               .add("position", map.get(bar))
               .add("image", url.get(bar))
-              .add("time", System.currentTimeMillis()/1000L)
+              .add("time", System.currentTimeMillis())
               .build();
           sess.getBasicRemote().sendObject(obj);
           }
